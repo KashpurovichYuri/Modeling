@@ -14,7 +14,7 @@ class Visualizer
 public:
 
 	Visualizer() :
-		m_window(sf::VideoMode(1000U, 1000U), "MANDELBROT VISUALIZER", sf::Style::Close),
+		m_window(sf::VideoMode(1000U, 1000U), "JULIA VISUALIZER", sf::Style::Close),
 		m_calculator(m_window.getSize().x, m_window.getSize().y, -0.74543f, 0.11301f, 200U), m_need_redraw(true),
 		m_view(sf::Vector2f(0.0f, 0.0f), 6.0f, 6.0f / (m_calculator.width() / m_calculator.height()))
 	{

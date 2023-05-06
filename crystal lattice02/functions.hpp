@@ -1,5 +1,7 @@
 #pragma once
 
+#include <cmath>
+
 #include <SFML/Graphics.hpp>
 
 template < typename T >
@@ -15,11 +17,11 @@ auto norm(sf::Vector2 < T > vector)
 
 	if (l == T(0))
 	{
-		return sf::Vector2 < T >(T(0), T(0));
+		return sf::Vector2 < T > (T(0), T(0));
 	}
 	else
 	{
-		return sf::Vector2 < T >(vector.x / l, vector.y / l);
+		return sf::Vector2 < T > (vector.x / l, vector.y / l);
 	}
 }
 
